@@ -1,4 +1,4 @@
-// ---------- HAMBURGER MENU TOGGLE (mobile) ----------
+// ---------- HAMBURGER MENU TOGGLE ----------
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
 
@@ -21,8 +21,8 @@ const navItems = document.querySelectorAll('.nav-menu a');
 window.addEventListener('scroll', () => {
   let current = 'home';
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 120;
-    if (window.scrollY >= sectionTop) {
+    const sectionTop = section.offsetTop - 100;
+    if (scrollY >= sectionTop) {
       current = section.getAttribute('id');
     }
   });
@@ -35,7 +35,7 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// ---------- SMOOTH SCROLL FOR NAV ----------
+// ---------- SMOOTH SCROLL FOR NAV (fallback) ----------
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     const href = this.getAttribute('href');
