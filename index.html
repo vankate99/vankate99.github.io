@@ -1,307 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
-  <title>Dr. Vandana Kate · Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hitesh Mourya · Portfolio</title>
+  <!-- Font Awesome (free icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="container">
-
-  <!-- ========== HEADER ========== -->
- <header class="profile-header">
-    <div class="profile-avatar" id="avatar" style="background-image: url('assets/profile.jpg'); background-size: cover; background-position: center; border-radius: 50%;">
-  <div class="avatar-overlay">👤</div>
-</div>
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#home">Hitesh<span>.</span></a>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#extracurricular">Activities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
-    <div class="profile-details">
-      <h1>Dr. Vandana Kate</h1>
-      <div class="title">Professor · Technical Mentor · Emerging Technologies Specialist</div>
+  </nav>
+
+  <!-- ===== HOME / HERO ===== -->
+  <section id="home" class="section hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-sub">Hello, I'm</p>
+          <h1>Hitesh Mourya</h1>
+          <p class="hero-role">Fullstack Developer · B.Tech CSE</p>
+          <div class="hero-badge">
+            <i class="fas fa-map-pin"></i> Indore, India
+          </div>
+          <div class="hero-actions">
+            <a href="#contact" class="btn primary">Get in touch</a>
+            <a href="#projects" class="btn outline">View projects</a>
+          </div>
+        </div>
+        <div class="hero-avatar">
+          <div class="avatar-circle">
+            <span>HM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OBJECTIVE ===== -->
+  <section id="objective" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-bullseye"></i> Career Objective</h2>
+      <div class="card objective-card">
+        <p>Aspiring software developer currently pursuing a B.Tech degree with a strong foundation in backend and frontend development. I have a passion for web development and game development and love to learn new things.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Academic &amp; Education</h2>
+      <div class="edu-grid">
+        <div class="card edu-card">
+          <h3>B.Tech CSE &amp; IT</h3>
+          <p class="institute">Acropolis Institute of Technology &amp; Research, Indore</p>
+          <p class="meta"><i class="fas fa-calendar-alt"></i> Pursuing · CGPA: 7.88</p>
+        </div>
+        <div class="card edu-card">
+          <h3>Higher Secondary (12th)</h3>
+          <p class="institute">Ramakrishna Mission Vidyapeeth, Indore</p>
+          <p class="meta"><i class="fas fa-percent"></i> 87% · MP Board</p>
+        </div>
+        <div class="card edu-card">
+          <h3>Senior Secondary (10th)</h3>
+          <p class="institute">Ramakrishna Mission Vidyapeeth, Indore</p>
+          <p class="meta"><i class="fas fa-percent"></i> 95% · MP Board</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-code"></i> IT &amp; Core Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+        <span class="skill-tag"><i class="fab fa-java"></i> Java (Core)</span>
+        <span class="skill-tag"><i class="fas fa-layer-group"></i> MERN Stack</span>
+        <span class="skill-tag"><i class="fas fa-database"></i> MongoDB</span>
+        <span class="skill-tag"><i class="fas fa-server"></i> Express.js</span>
+        <span class="skill-tag"><i class="fab fa-react"></i> React.js</span>
+        <span class="skill-tag"><i class="fab fa-node"></i> Node.js</span>
+        <span class="skill-tag"><i class="fas fa-database"></i> DBMS / MySQL</span>
+        <span class="skill-tag"><i class="fas fa-code-branch"></i> DSA (Arrays, Strings, Sliding Window, 2 pointers)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-folder-open"></i> Projects</h2>
+      <!-- minor project -->
+      <div class="project-block">
+        <div class="card project-card">
+          <h3><i class="fas fa-brain"></i> Mental Health Support Platform</h3>
+          <p class="project-role">Backend Developer · Ongoing</p>
+          <p>MERN stack platform with study groups, forums, quizzes &amp; AI/ML depression detection.</p>
+          <span class="project-badge">Minor Project</span>
+        </div>
+      </div>
+      <!-- personal projects row -->
+      <div class="project-grid">
+        <div class="card project-card">
+          <h3><i class="fas fa-map-pin"></i> GeoAttendee</h3>
+          <p class="project-role">Fullstack Developer · 2 months</p>
+          <p>GPS‑based attendance tracker mobile app ensuring physical presence.</p>
+        </div>
+        <div class="card project-card">
+          <h3><i class="fas fa-wallet"></i> Expense Tracker</h3>
+          <p class="project-role">Backend Developer · 1 month</p>
+          <p>Node.js, JavaScript, MongoDB personal finance manager with secure logging &amp; analysis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-trophy"></i> Achievements</h2>
+      <ul class="achievement-list">
+        <li><i class="fas fa-award"></i> Winner of project exhibition competition, CSIT AITR</li>
+        <li><i class="fas fa-flag"></i> Cleared internal round, Smart India Hackathon 2024</li>
+        <li><i class="fas fa-certificate"></i> NPTEL Java programming – 83%</li>
+        <li><i class="fas fa-medal"></i> Cleared first round of Techqium 2024</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== EXTRACURRICULAR ===== -->
+  <section id="extracurricular" class="section">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-puzzle-piece"></i> Extracurricular &amp; Strengths</h2>
+      <div class="extra-grid">
+        <div class="card extra-card">
+          <h4><i class="fas fa-chess"></i> Activities</h4>
+          <ul>
+            <li>Organized chess competition (high school)</li>
+            <li>3rd position – school‑level science exhibition</li>
+          </ul>
+        </div>
+        <div class="card extra-card">
+          <h4><i class="fas fa-heart"></i> Strengths</h4>
+          <ul>
+            <li>Adaptability</li>
+            <li>Continuous Learning</li>
+            <li>Teamwork</li>
+          </ul>
+        </div>
+        <div class="card extra-card">
+          <h4><i class="fas fa-rocket"></i> Areas of Improvement</h4>
+          <ul>
+            <li>Public Speaking</li>
+            <li>Advanced Algorithms &amp; DS</li>
+          </ul>
+        </div>
+        <div class="card extra-card">
+          <h4><i class="fas fa-gamepad"></i> Hobbies</h4>
+          <ul>
+            <li>Watching anime</li>
+            <li>Playing video games</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / PERSONAL ===== -->
+  <section id="contact" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-address-card"></i> Contact &amp; Personal</h2>
       <div class="contact-grid">
-        <span class="contact-item" data-label="Email">📧 vandanakate@acropolis.in</span>
-        <span class="contact-item" data-label="Phone">📞 +91 98260 70064</span>
-        <span class="contact-item" data-label="LinkedIn">🔗 linkedin.com/in/vandana-kate-31b887b6</span>
-        <span class="contact-item" data-label="Address">📍 63 N, Sanchar Nagar Ext., Kanadia Rd, Indore</span>
-      </div>
-    </div>
-  </header>
-
-  <!-- ========== SUMMARY ========== -->
-  <section class="summary-box" data-aos="fade-up">
-    <h2 style="border-bottom: none; margin: 0 0 0.5rem 0; padding: 0;">Summary</h2>
-    <p>Highly experienced and dedicated Engineering Professor with a proven track record in teaching, administration, and industry collaboration. Skilled at simplifying complex engineering concepts for diverse audiences, fostering student success through hands-on learning and real-world applications. Expertise in computer electronics technology and innovative methodologies, with a strong commitment to guiding students toward academic and professional growth. I take pride in bridging academia and industry by developing and supporting high-profile initiatives that inspire students to engage with cutting-edge, high-tech fields.</p>
-    <ul style="margin-top: 0.5rem;" class="summary-list">
-      <li>Extensive breadth of experience in engineering instruction at the college level</li>
-      <li>Strong ability to deliver course material through a variety of teaching methods</li>
-      <li>Excellent presentation and communication skills</li>
-      <li>Superior creative and critical thinking abilities</li>
-      <li>High multitasking ability to balance teaching and administrative duties.</li>
-      <li>Outstanding proficiency in MS Office including PowerPoint, Word and Excel</li>
-    </ul>
-  </section>
-
-  <!-- ========== AREA OF INTEREST ========== -->
-  <section data-aos="fade-up">
-    <h2>🔬 Area of Interest</h2>
-    <div class="card" style="margin-bottom: 1.5rem;">
-      <ul class="interest-list">
-        <li>Statistical Analysis – data collection & statistical analysis that led to sound recommendations adopted by departments.</li>
-        <li>Artificial Intelligence, Machine Learning, Deep learning & its applications in medical image processing and Image restoration</li>
-        <li>Theory of Computation, Compiler Design, Operating System, Computer System Organization</li>
-        <li>Data Structure, Analysis and Design of Algorithms, Object Oriented Analysis and Design</li>
-        <li>Software Engineering, Software Engineering & Agile, Software Project Management</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ========== PATENTS & COPYRIGHTS ========== -->
-  <section data-aos="fade-up">
-    <h2>📜 Patent & Copyrights <span class="count-badge">9</span></h2>
-    <div class="card patent-container">
-      <div class="patent-item"><span class="patent-title">Formulation of Customized Rules using Machine Learning Algorithms by Physiological Data Classification</span><span class="patent-meta">06/11/2020 · Govt Of India</span></div>
-      <div class="patent-item"><span class="patent-title">Autonomous Medicine Disbursing System Based on Mobile Robotics For Disastrous Management</span><span class="patent-meta">12/02/2021 · Govt Of India</span></div>
-      <div class="patent-item"><span class="patent-title">System to Detect Down Syndrome from Facial Features and Method Thereof</span><span class="patent-meta">28/07/2023 · Govt Of India</span></div>
-      <div class="patent-item"><span class="patent-title">Design Patent of Foldable Cycle</span><span class="patent-meta">12/12/2023 · Govt Of India</span></div>
-      <div class="patent-item"><span class="patent-title">Copyright of Operating System Lab Manual L-140868/2024</span><span class="patent-meta">11/01/2024 · Govt Of India</span></div>
-      <div class="patent-item"><span class="patent-title">Copyright of Flux Infused Direct Deposition Enhancement Laser Based Metal 3d Printing</span><span class="patent-meta">25/02/2025 · Govt Of India</span></div>
-      <div class="patent-item"><span class="patent-title">Copyright of Customizable AAC (LD-20250165829)</span><span class="patent-meta">29/05/2025 · Govt Of India</span></div>
-      <div class="patent-item"><span class="patent-title">Copyright of Medivault: Smart Expiry Alerts & Full Store Solution (Ld-20250166630)</span><span class="patent-meta">13/06/2025 · Govt Of India</span></div>
-      <div class="patent-item"><span class="patent-title">Copyright of Urjaa Rupantaran- Driving Force For Innovative Change (L-151908/2024)</span><span class="patent-meta">26/07/2024 · Govt Of India</span></div>
-    </div>
-  </section>
-
-  <!-- ========== SKILLS ========== -->
-  <section data-aos="fade-up">
-    <h2>🧰 Skill Set</h2>
-    <div class="grid-2col">
-      <div class="card skill-card">
-        <h4 style="margin-top: 0;">Operational Functional Skills</h4>
-        <ul>
-          <li>Quality Control · Testing Evaluation and Analysis</li>
-          <li>Scheduling tools: Jira, Trello · Agile Methodologies</li>
-          <li>Presentation Skills · Training program implementations</li>
-          <li>Training and Development (Technical & Soft Skill)</li>
-          <li>Operation Research · Data Analysis</li>
-          <li>New Technologies: AWS Cloud, Google Cloud, M. Azure</li>
-        </ul>
-        <div class="skill-tags">
-          <span class="tag">Agile</span>
-          <span class="tag">Jira</span>
-          <span class="tag">Trello</span>
-          <span class="tag">AWS</span>
-          <span class="tag">Azure</span>
+        <div class="card contact-card">
+          <h4><i class="fas fa-phone-alt"></i> Phone</h4>
+          <p><a href="tel:+918839291005">+91 8839291005</a></p>
+        </div>
+        <div class="card contact-card">
+          <h4><i class="fas fa-envelope"></i> Email</h4>
+          <p><a href="mailto:hiteshmourya2024@gmail.com">hiteshmourya2024@gmail.com</a></p>
+        </div>
+        <div class="card contact-card">
+          <h4><i class="fab fa-linkedin"></i> LinkedIn</h4>
+          <p><a href="#" target="_blank">in/hitesh-mourya</a></p>
+        </div>
+        <div class="card contact-card">
+          <h4><i class="fas fa-map-marker-alt"></i> Address</h4>
+          <p>575, scheme 51, Indore (M.P) 452015</p>
+        </div>
+        <div class="card contact-card">
+          <h4><i class="fas fa-calendar-day"></i> Date of Birth</h4>
+          <p>21 February 2005</p>
+        </div>
+        <div class="card contact-card">
+          <h4><i class="fas fa-language"></i> Languages</h4>
+          <p>English, Hindi (Mother tongue)</p>
         </div>
       </div>
-      <div class="card skill-card">
-        <h4 style="margin-top: 0;">Programming & Tools</h4>
-        <ul>
-          <li><strong>Languages:</strong> C, C++, Java, JSP, Servlets, Python, Matlab/Octave, R</li>
-          <li><strong>Database:</strong> Oracle, MS Access</li>
-          <li><strong>SQL Tools:</strong> Adobe Dreamweaver</li>
-          <li><strong>Additional:</strong> AWS Solution Architect Certified</li>
-        </ul>
-        <div class="skill-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Java</span>
-          <span class="tag">C++</span>
-          <span class="tag">SQL</span>
-          <span class="tag">AWS</span>
-        </div>
+      <div class="declaration">
+        <p><i class="fas fa-check-circle"></i> I hereby declare that the information furnished above is true to the best of my knowledge.</p>
+        <p class="signature">Hitesh Mourya · Indore</p>
       </div>
     </div>
   </section>
 
-  <!-- ========== BOOKS PUBLISHED ========== -->
-  <section data-aos="fade-up">
-    <h2>📚 Books Published</h2>
-    <div class="card">
-      <div class="book-item"><span><strong>Java Expeditions: A Hands-On Guide to Mastering Object-Oriented Programming with Ready-to-Run Programs</strong> · Dr. Vandana Kate, Vikas Jain, Dr. Pragya Shukla</span><span class="patent-meta">25 March 2024</span></div>
-      <div class="book-item"><span><strong># Problem Solving and Python Programming</strong> · Dr. Vandana Kate, Mr. Tarun Kanodia, Dr. T. Balachander, Dr. A. Sasi Kumar</span><span class="patent-meta">27 December 2022</span></div>
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Hitesh Mourya · Built with <i class="fas fa-heart" style="color: #e74c3c;"></i> for GitHub</p>
     </div>
-  </section>
-
-  <!-- ========== EXPERIENCE ========== -->
-  <section data-aos="fade-up">
-    <h2>💼 Experience — 23+ Years</h2>
-    <div class="card experience-container">
-      <div class="experience-item">
-        <div class="exp-head"><span class="exp-org">Professor</span> <span class="exp-date">Aug 2014 – Present</span></div>
-        <div><strong>Acropolis Institute of Technology and Research, Indore</strong></div>
-        <ul style="margin-top: 0.3rem;">
-          <li>Compiled and managed Result RGPV examination records with accuracy.</li>
-          <li>Editor for International Conference RAMSITA 2025, overseeing peer-reviewed publications.</li>
-          <li>Editorial roles in IJAITR and IJRMETS international journals.</li>
-          <li>Managed sessional compilation, grading, and academic reporting.</li>
-          <li>Contributed to patent/copyright filing and curriculum innovation.</li>
-        </ul>
-      </div>
-      <div class="experience-item">
-        <div class="exp-head"><span class="exp-org">Reader</span> <span class="exp-date">July 2007 – Feb 2014</span></div>
-        <div><strong>S.D Bansal College of Technology, Indore</strong></div>
-      </div>
-      <div class="experience-item">
-        <div class="exp-head"><span class="exp-org">Teaching Assistant</span> <span class="exp-date">June 2008 – June 2009</span></div>
-        <div><strong>Institute of Engineering and Technology, Indore</strong></div>
-      </div>
-      <div class="experience-item">
-        <div class="exp-head"><span class="exp-org">Lecturer</span> <span class="exp-date">July 2004 – Sept 2006</span></div>
-        <div><strong>Shri Govindram Seksaria Institute of Technology and Science</strong></div>
-      </div>
-      <div class="experience-item">
-        <div class="exp-head"><span class="exp-org">Lecturer</span> <span class="exp-date">July 2002 – Sept 2003</span></div>
-        <div><strong>Jabalpur Engineering College</strong></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== ACADEMICS & MILESTONES ========== -->
-  <section data-aos="fade-up">
-    <h2>🎓 Academics & Key Milestones</h2>
-    <div class="grid-2col">
-      <div class="card">
-        <h4>Academics</h4>
-        <ul>
-          <li>Ph.D. (Computer Engineering) – IET, DAVV, Indore (2024)</li>
-          <li>M.E (Computer Engineering) – IET, DAVV (2010)</li>
-          <li>B.E. (CSE) – Jabalpur Engineering College, RGPV (2002)</li>
-        </ul>
-        <h4 style="margin-top: 1rem;">Key Milestones</h4>
-        <ul>
-          <li>Second topper in ME (80.5%)</li>
-          <li>First position in PhD coursework (SGPA 9.7/10)</li>
-          <li>89%tile in GATE 2008</li>
-          <li>Content Augmentation through SPOCATHON, NPTEL (May 2020)</li>
-          <li>Appreciation for National Conference ETCOMP'2010</li>
-          <li>Appreciation for Lab Sessions using R & Python, AICTE FDP (Feb 2018)</li>
-          <li>NPTEL certifications in many core subjects</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>Certificates & Recognitions (NPTEL – IITs/IISc)</h4>
-        <ul>
-          <li>Alibaba Cloud Certified Developer (valid until Apr 2026)</li>
-          <li>AWS Solution Architect (Aug 2022)</li>
-          <li>Microsoft Azure AI Fundamentals (Apr 2021)</li>
-          <li>Microsoft Azure A-Z 900 Cloud Fundamentals (Mar 2021)</li>
-          <li>Certificate of Appreciation – Cloud Computing (Jul-Dec 2024)</li>
-          <li>Certificate of Appreciation – Intro to Operating Systems (Jul-Dec 2024)</li>
-          <li>Certificate of Appreciation – OS Fundamentals (Jul-Dec 2024)</li>
-          <li>Top Performing Mentor – Programming in Java (Jul-Dec 2024)</li>
-          <li>Top Performing Mentor – Data Science for Engineers (Jul-Apr 2025)</li>
-          <li>Top Performing Mentor – Programming in Java (Jul-Apr 2025)</li>
-          <li>MPCST-sponsored National Seminar on Patents & IPR (Apr 2024)</li>
-          <li>Google Cloud appreciation (Dec 2025)</li>
-          <li>Best Teaching Practice: "Making Learning Visible through KANBAN Boards" – ACM COMPUTE-2025, IIT Ropar</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== PUBLICATIONS (selected) ========== -->
-  <section data-aos="fade-up">
-    <h2>📄 Publications <span class="count-badge">60+</span></h2>
-    <div class="card" style="max-height: 420px; overflow-y: auto;" id="publications-list">
-      <div class="pub-item"><span>Vandana Kate, "Machine Learning Models for Climate Risk Prediction," IGI Global, 2026. <span class="tag">Scopus</span></span></div>
-      <div class="pub-item"><span>Koustub Poddar, Vandana Kate, et al., "Groundwater Level Prediction Through Machine Learning," Springer, 2026. <span class="tag">Scopus</span></span></div>
-      <div class="pub-item"><span>Darshika Singh Panwar, Vandana Kate, et al., "Harvest of Innovation: AI-Driven Precision Farming," Springer, 2026. <span class="tag">Scopus</span></span></div>
-      <div class="pub-item"><span>Vandana Kate, et al., "MediVault: Smart Expiry Alerts," ACROSET 2025, IEEE. <span class="tag">Scopus</span></span></div>
-      <div class="pub-item"><span>Vandana Kate, et al., "Vyanjak: Innovative Video Intercom for Deaf Community," INCOFT 2025. <span class="tag">Google Scholar</span></span></div>
-      <div class="pub-item"><span>Vandana Kate, et al., "Explainable AI for Skin Cancer Diagnosis," INCOFT 2025. <span class="tag">Google Scholar</span></span></div>
-      <div class="pub-item"><span>Shilpa Bhalerao, Praveen Gupta, Vandana Kate, "Peer-Review Statements," RAMSITA 2025, Atlantis Press.</span></div>
-      <div class="pub-item"><span>Vandana Kate, Sreejyothsna Ankam, "Chatbots and Virtual Assistants," RADemics, 2025.</span></div>
-      <div class="pub-item"><span>Daksh Kitukale, Vandana Kate, et al., "Customizable AAC Device," Springer, 2025. <span class="tag">Scopus</span></span></div>
-      <div class="pub-item"><span>Vandana Kate, et al., "Enhancing Cybersecurity Through ML," ACROSET 2024, IEEE. <span class="tag">Scopus</span></span></div>
-      <div class="pub-item"><span>Nidhi Nigam, Vandana Kate, et al., "RedSpear: Re-engineered Discharge Toolkit," ACROSET 2024. <span class="tag">Scopus</span></span></div>
-      <div class="pub-item"><span>Shivam Kushwah, Vandana Kate, et al., "TypeScript: Robust Development," ACROSET 2024. <span class="tag">Scopus</span></span></div>
-      <div class="pub-item"><span>Anshul Sarna, Vandana Kate, et al., "High Autoencoder for Grayscale Portraits," ACROSET 2024. <span class="tag">Scopus</span></span></div>
-      <div class="pub-item"><span>Vandana Kate, Pragya Shukla, "Breast Cancer Image Multi-Classification," iJOE, 2021.</span></div>
-      <div class="pub-item"><span>Vandana Kate, Pragya Shukla, "A 3 Tier CNN Model," SOCPROS 2020.</span></div>
-      <div class="pub-item"><span>Vandana Kate, et al., "Image Segmentation of Breast Cancer Histopathology," Springer, 2020. <span class="tag">Scopus</span></span></div>
-    </div>
-  </section>
-
-  <!-- ========== CERTIFICATIONS & WORKSHOPS ========== -->
-  <section data-aos="fade-up">
-    <h2>📌 Certifications & FDPs</h2>
-    <div class="card">
-      <ul class="cert-list">
-        <li>FDP "Chalkboards to Chatbots" – IIT Ropar (Jan 2026)</li>
-        <li>ATAL FDP "Research Application in ML & IoT" – CDGI (Sep 2025)</li>
-        <li>FDP "Smart Sensors, IoT, AI in Agriculture" – Chandigarh Univ (May 2025)</li>
-        <li>FDP "AI & Graph Theoretic for Medical Imaging" – VNIT (Apr 2025)</li>
-        <li>FDP "Advanced Optimization using MATLAB" – MeitY (Feb 2025)</li>
-        <li>FDP "Outcome Based Education" – Acropolis (Dec 2024)</li>
-        <li>FDP "High Performance Computing" – AICTE-Sankalp (Nov 2024)</li>
-        <li>FDP "Building Web Dev with Cloud" – Next Gen (Sep 2024)</li>
-        <li>SAWIT.AI Learnathon – Women Techmakers (Sep 2024)</li>
-        <li>Workshop "Generative AI" – Manipal Univ (Aug 2024)</li>
-        <li>NPTEL "Unboxing Gen AI with LLM" (Jul 2024)</li>
-        <li>FDP "Cognitive Computing for Smart Apps" – VIIT Pune (Mar 2024)</li>
-        <li>Blockchain Builder – FITT-IITD (Mar 2024)</li>
-        <li>STTP "Lab-Market 1.0" – Poornima College (Dec 2023)</li>
-        <li>STTP "Data Science" – AICTE (Nov-Dec 2020)</li>
-        <li>NPTEL Deep Learning – IIT Ropar (Jan-Apr 2020)</li>
-        <li>NPTEL Python for Data Science (Apr 2020)</li>
-        <li>Deep Learning Specialization – Coursera (May 2020)</li>
-        <li>NVIDIA Deep Learning for CV (Nov 2019)</li>
-        <li>RPA Starter – UI Path (Nov 2019)</li>
-        <li>NPTEL Joy of Computing using Python (80%)</li>
-        <li>NPTEL Programming with Java (85%)</li>
-        <li>NPTEL Theory of Computation (63%)</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ========== WORKSHOPS/CONFERENCES CONDUCTED ========== -->
-  <section data-aos="fade-up">
-    <h2>🎤 Workshops / Hackathons / Conferences Conducted</h2>
-    <div class="card">
-      <ul>
-        <li>"Empowering Educators with IPR Awareness" – SIRT Bhopal (Aug 2025)</li>
-        <li>"Guru Setu – Assessing Your Teaching" – MMTTC, IIT Ropar (Aug 2025) <a href="#">[YouTube]</a></li>
-        <li>"AI Tools in Education & Management" – Acropolis Institute of Law (Sep 2025)</li>
-        <li>Conference Co-Chair – RAMSITA-2025 (Indore, Feb 2025)</li>
-        <li>Initiated "IJAITR" International Journal (2024)</li>
-        <li>Conducted ACRO-BOTATHON 2022 (TCS & Indothai Ltd.)</li>
-        <li>Summer Training on AIML for CSE/CSIT/MCA (Jun-Jul 2022)</li>
-        <li>Python 3.4.3 training – Spoken Tutorial, IIT Bombay (Jan 2020)</li>
-        <li>6-day Training on "AIML" (Dec 2019)</li>
-        <li>FDP on "Neural Networks" – AITR (Nov 2019)</li>
-        <li>Workshop on LaTeX (Feb 2018) & Internship program (Jan 2018)</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ========== PERSONAL ATTRIBUTES ========== -->
-  <section data-aos="fade-up">
-    <h2>🧑‍🏫 Personal Attributes</h2>
-    <div class="card" style="display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center;">
-      <div>
-        <p><strong>Date of Birth:</strong> 19th May 1979</p>
-        <p><strong>Languages:</strong> English (Professional), Hindi (Native)</p>
-        <p><strong>Philosophy:</strong> <em>"If it is possible – It's Done, if it is impossible – It will be done"</em></p>
-        <p class="text-muted">📖 I am a true bibliophilic person but love to spend time with some good books also like to write blogs/articles.</p>
-      </div>
-      <div style="background: #eef2f6; padding: 0.6rem 1.4rem; border-radius: 40px; font-weight: 500; color: #1e293b;">
-        Digital file – no signature required
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== BACK TO TOP BUTTON ========== -->
-  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
-
-  <footer style="margin-top: 3rem; text-align: center; color: #94a3b8; font-size: 0.9rem; border-top: 1px solid #e2e8f0; padding-top: 1.5rem;">
-    Dr. Vandana Kate · Portfolio · Built with ❤️ for GitHub Pages
-    <span id="year"></span>
   </footer>
 
-</div>
-
-<script src="script.js"></script>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
