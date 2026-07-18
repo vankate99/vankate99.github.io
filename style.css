@@ -22,16 +22,16 @@ body {
   padding: 0 1.5rem;
 }
 
-/* ---------- NAVBAR - HORIZONTAL ---------- */
+/* ---------- NAVBAR ---------- */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background: #0f172a;
-  padding: 0.6rem 0;
+  padding: 0.8rem 0;
   z-index: 1000;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .nav-container {
@@ -48,46 +48,33 @@ body {
   font-weight: 700;
   color: #fff;
   text-decoration: none;
-  letter-spacing: -0.5px;
 }
 
 .nav-logo a span {
   color: #38bdf8;
 }
 
-/* horizontal menu */
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 0.2rem;
-  align-items: center;
+  gap: 1.2rem;
   flex-wrap: wrap;
-}
-
-.nav-menu li {
-  display: inline-block;
 }
 
 .nav-menu a {
   color: #cbd5e1;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.9rem;
-  padding: 0.4rem 0.9rem;
-  border-radius: 30px;
-  transition: all 0.25s ease;
-  white-space: nowrap;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+  padding: 0.3rem 0;
+  border-bottom: 2px solid transparent;
 }
 
-.nav-menu a:hover {
-  color: #fff;
-  background: rgba(56, 189, 248, 0.15);
-}
-
+.nav-menu a:hover,
 .nav-menu a.active {
   color: #fff;
-  background: #2563eb;
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+  border-bottom-color: #38bdf8;
 }
 
 .hamburger {
@@ -131,7 +118,7 @@ body {
 /* ---------- HERO ---------- */
 .hero {
   padding-top: 7rem;
-  background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   color: #fff;
   min-height: 100vh;
   display: flex;
@@ -171,11 +158,11 @@ body {
 
 .hero-badge {
   display: inline-block;
-  background: rgba(56, 189, 248, 0.12);
+  background: rgba(56, 189, 248, 0.15);
   padding: 0.3rem 1.2rem;
   border-radius: 30px;
   font-size: 0.95rem;
-  border: 1px solid rgba(56, 189, 248, 0.25);
+  border: 1px solid rgba(56, 189, 248, 0.3);
   margin-bottom: 1.8rem;
 }
 
@@ -191,7 +178,7 @@ body {
   border-radius: 40px;
   text-decoration: none;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .btn.primary {
@@ -203,8 +190,7 @@ body {
 .btn.primary:hover {
   background: #1d4ed8;
   border-color: #1d4ed8;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+  transform: translateY(-2px);
 }
 
 .btn.outline {
@@ -215,8 +201,8 @@ body {
 
 .btn.outline:hover {
   border-color: #fff;
-  background: rgba(255, 255, 255, 0.06);
-  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
 }
 
 .hero-avatar {
@@ -235,22 +221,21 @@ body {
   font-size: 4rem;
   font-weight: 700;
   color: #fff;
-  box-shadow: 0 0 0 6px rgba(56, 189, 248, 0.15);
+  box-shadow: 0 0 0 6px rgba(56, 189, 248, 0.2);
 }
 
 /* ---------- CARDS ---------- */
 .card {
-  background: #ffffff;
+  background: #fff;
   border-radius: 16px;
   padding: 1.8rem;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-  transition: all 0.25s ease;
-  border: 1px solid #e9edf2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: 0.2s;
+  border: 1px solid #e2e8f0;
 }
 
 .card:hover {
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
-  border-color: #d0d8e3;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
 .objective-card {
@@ -259,7 +244,6 @@ body {
   font-size: 1.1rem;
   text-align: center;
   background: #ffffff;
-  border-left: 5px solid #2563eb;
 }
 
 /* ---------- EDUCATION ---------- */
@@ -298,14 +282,14 @@ body {
 }
 
 .skill-tag {
-  background: #ffffff;
+  background: #fff;
   padding: 0.5rem 1.4rem;
   border-radius: 40px;
   font-weight: 500;
   font-size: 0.95rem;
   border: 1px solid #e2e8f0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
-  transition: all 0.2s ease;
+  transition: 0.2s;
 }
 
 .skill-tag i {
@@ -315,9 +299,7 @@ body {
 
 .skill-tag:hover {
   border-color: #2563eb;
-  background: #f0f7ff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+  background: #f8fafc;
 }
 
 /* ---------- PROJECTS ---------- */
@@ -335,11 +317,6 @@ body {
   font-size: 1.2rem;
   margin-bottom: 0.2rem;
   color: #0f172a;
-}
-
-.project-card h3 i {
-  color: #2563eb;
-  margin-right: 0.4rem;
 }
 
 .project-role {
@@ -370,17 +347,11 @@ body {
 }
 
 .achievement-list li {
-  background: #ffffff;
+  background: #fff;
   padding: 1rem 1.5rem;
   border-radius: 12px;
   border-left: 5px solid #2563eb;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
-  transition: 0.2s;
-}
-
-.achievement-list li:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
-  transform: translateX(4px);
 }
 
 .achievement-list i {
@@ -413,7 +384,7 @@ body {
 
 .extra-card li {
   padding: 0.2rem 0;
-  border-bottom: 1px dashed #e9edf2;
+  border-bottom: 1px dashed #e2e8f0;
 }
 
 .extra-card li:last-child {
@@ -425,10 +396,6 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-}
-
-.contact-card {
-  background: #ffffff;
 }
 
 .contact-card h4 {
@@ -449,16 +416,15 @@ body {
 
 .contact-card a:hover {
   text-decoration: underline;
-  color: #1d4ed8;
 }
 
 .declaration {
   margin-top: 2.5rem;
   padding: 1.5rem;
-  background: #ffffff;
+  background: #fff;
   border-radius: 16px;
   text-align: center;
-  border: 1px solid #e9edf2;
+  border: 1px solid #e2e8f0;
 }
 
 .declaration i {
@@ -485,13 +451,6 @@ footer i {
 }
 
 /* ---------- RESPONSIVE ---------- */
-@media (max-width: 992px) {
-  .nav-menu a {
-    font-size: 0.8rem;
-    padding: 0.3rem 0.7rem;
-  }
-}
-
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -504,11 +463,10 @@ footer i {
     width: 100%;
     background: #0f172a;
     flex-direction: column;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     gap: 0;
     display: none;
     border-top: 1px solid #1e293b;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   }
 
   .nav-menu.active {
@@ -517,20 +475,13 @@ footer i {
 
   .nav-menu a {
     padding: 0.8rem 1.5rem;
-    border-radius: 0;
     border-bottom: 1px solid #1e293b;
-    width: 100%;
-    text-align: left;
-    font-size: 0.95rem;
   }
 
-  .nav-menu a:hover {
-    background: #1e293b;
-  }
-
+  .nav-menu a:hover,
   .nav-menu a.active {
-    background: #2563eb;
-    border-radius: 0;
+    border-bottom-color: #1e293b;
+    background: #1e293b;
   }
 
   .hero-text h1 {
@@ -573,9 +524,5 @@ footer i {
   .skill-tag {
     font-size: 0.8rem;
     padding: 0.3rem 1rem;
-  }
-
-  .contact-grid {
-    grid-template-columns: 1fr 1fr;
   }
 }
