@@ -14,23 +14,27 @@
 
   <!-- ========== HEADER ========== -->
   <header class="profile-header">
-   <div class="profile-avatar" style="background-image: url('assets/profile1.jpg'); background-size: cover; background-position: center; font-size: 0;">&nbsp;</div
+    <div class="profile-avatar" id="avatar">
+      <span class="avatar-text">VK</span>
+      <div class="avatar-overlay">👤</div>
+    </div>
+    <div class="profile-details">
       <h1>Dr. Vandana Kate</h1>
       <div class="title">Professor · Technical Mentor · Emerging Technologies Specialist</div>
       <div class="contact-grid">
-        <span>📧 vandanakate@acropolis.in</span>
-        <span>📞 +91 98260 70064</span>
-        <span>🔗 linkedin.com/in/vandana-kate-31b887b6</span>
-        <span>📍 63 N, Sanchar Nagar Ext., Kanadia Rd, Indore</span>
+        <span class="contact-item" data-label="Email">📧 vandanakate@acropolis.in</span>
+        <span class="contact-item" data-label="Phone">📞 +91 98260 70064</span>
+        <span class="contact-item" data-label="LinkedIn">🔗 linkedin.com/in/vandana-kate-31b887b6</span>
+        <span class="contact-item" data-label="Address">📍 63 N, Sanchar Nagar Ext., Kanadia Rd, Indore</span>
       </div>
     </div>
   </header>
 
   <!-- ========== SUMMARY ========== -->
-  <section class="summary-box">
+  <section class="summary-box" data-aos="fade-up">
     <h2 style="border-bottom: none; margin: 0 0 0.5rem 0; padding: 0;">Summary</h2>
     <p>Highly experienced and dedicated Engineering Professor with a proven track record in teaching, administration, and industry collaboration. Skilled at simplifying complex engineering concepts for diverse audiences, fostering student success through hands-on learning and real-world applications. Expertise in computer electronics technology and innovative methodologies, with a strong commitment to guiding students toward academic and professional growth. I take pride in bridging academia and industry by developing and supporting high-profile initiatives that inspire students to engage with cutting-edge, high-tech fields.</p>
-    <ul style="margin-top: 0.5rem;">
+    <ul style="margin-top: 0.5rem;" class="summary-list">
       <li>Extensive breadth of experience in engineering instruction at the college level</li>
       <li>Strong ability to deliver course material through a variety of teaching methods</li>
       <li>Excellent presentation and communication skills</li>
@@ -41,10 +45,10 @@
   </section>
 
   <!-- ========== AREA OF INTEREST ========== -->
-  <section>
+  <section data-aos="fade-up">
     <h2>🔬 Area of Interest</h2>
     <div class="card" style="margin-bottom: 1.5rem;">
-      <ul>
+      <ul class="interest-list">
         <li>Statistical Analysis – data collection & statistical analysis that led to sound recommendations adopted by departments.</li>
         <li>Artificial Intelligence, Machine Learning, Deep learning & its applications in medical image processing and Image restoration</li>
         <li>Theory of Computation, Compiler Design, Operating System, Computer System Organization</li>
@@ -55,9 +59,9 @@
   </section>
 
   <!-- ========== PATENTS & COPYRIGHTS ========== -->
-  <section>
-    <h2>📜 Patent & Copyrights</h2>
-    <div class="card">
+  <section data-aos="fade-up">
+    <h2>📜 Patent & Copyrights <span class="count-badge">9</span></h2>
+    <div class="card patent-container">
       <div class="patent-item"><span class="patent-title">Formulation of Customized Rules using Machine Learning Algorithms by Physiological Data Classification</span><span class="patent-meta">06/11/2020 · Govt Of India</span></div>
       <div class="patent-item"><span class="patent-title">Autonomous Medicine Disbursing System Based on Mobile Robotics For Disastrous Management</span><span class="patent-meta">12/02/2021 · Govt Of India</span></div>
       <div class="patent-item"><span class="patent-title">System to Detect Down Syndrome from Facial Features and Method Thereof</span><span class="patent-meta">28/07/2023 · Govt Of India</span></div>
@@ -71,10 +75,10 @@
   </section>
 
   <!-- ========== SKILLS ========== -->
-  <section>
+  <section data-aos="fade-up">
     <h2>🧰 Skill Set</h2>
     <div class="grid-2col">
-      <div class="card">
+      <div class="card skill-card">
         <h4 style="margin-top: 0;">Operational Functional Skills</h4>
         <ul>
           <li>Quality Control · Testing Evaluation and Analysis</li>
@@ -84,8 +88,15 @@
           <li>Operation Research · Data Analysis</li>
           <li>New Technologies: AWS Cloud, Google Cloud, M. Azure</li>
         </ul>
+        <div class="skill-tags">
+          <span class="tag">Agile</span>
+          <span class="tag">Jira</span>
+          <span class="tag">Trello</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Azure</span>
+        </div>
       </div>
-      <div class="card">
+      <div class="card skill-card">
         <h4 style="margin-top: 0;">Programming & Tools</h4>
         <ul>
           <li><strong>Languages:</strong> C, C++, Java, JSP, Servlets, Python, Matlab/Octave, R</li>
@@ -93,12 +104,19 @@
           <li><strong>SQL Tools:</strong> Adobe Dreamweaver</li>
           <li><strong>Additional:</strong> AWS Solution Architect Certified</li>
         </ul>
+        <div class="skill-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Java</span>
+          <span class="tag">C++</span>
+          <span class="tag">SQL</span>
+          <span class="tag">AWS</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ========== BOOKS PUBLISHED ========== -->
-  <section>
+  <section data-aos="fade-up">
     <h2>📚 Books Published</h2>
     <div class="card">
       <div class="book-item"><span><strong>Java Expeditions: A Hands-On Guide to Mastering Object-Oriented Programming with Ready-to-Run Programs</strong> · Dr. Vandana Kate, Vikas Jain, Dr. Pragya Shukla</span><span class="patent-meta">25 March 2024</span></div>
@@ -107,9 +125,9 @@
   </section>
 
   <!-- ========== EXPERIENCE ========== -->
-  <section>
+  <section data-aos="fade-up">
     <h2>💼 Experience — 23+ Years</h2>
-    <div class="card">
+    <div class="card experience-container">
       <div class="experience-item">
         <div class="exp-head"><span class="exp-org">Professor</span> <span class="exp-date">Aug 2014 – Present</span></div>
         <div><strong>Acropolis Institute of Technology and Research, Indore</strong></div>
@@ -141,7 +159,7 @@
   </section>
 
   <!-- ========== ACADEMICS & MILESTONES ========== -->
-  <section>
+  <section data-aos="fade-up">
     <h2>🎓 Academics & Key Milestones</h2>
     <div class="grid-2col">
       <div class="card">
@@ -184,9 +202,9 @@
   </section>
 
   <!-- ========== PUBLICATIONS (selected) ========== -->
-  <section>
-    <h2>📄 Publications (last 5 years, 60+)</h2>
-    <div class="card" style="max-height: 420px; overflow-y: auto;">
+  <section data-aos="fade-up">
+    <h2>📄 Publications <span class="count-badge">60+</span></h2>
+    <div class="card" style="max-height: 420px; overflow-y: auto;" id="publications-list">
       <div class="pub-item"><span>Vandana Kate, "Machine Learning Models for Climate Risk Prediction," IGI Global, 2026. <span class="tag">Scopus</span></span></div>
       <div class="pub-item"><span>Koustub Poddar, Vandana Kate, et al., "Groundwater Level Prediction Through Machine Learning," Springer, 2026. <span class="tag">Scopus</span></span></div>
       <div class="pub-item"><span>Darshika Singh Panwar, Vandana Kate, et al., "Harvest of Innovation: AI-Driven Precision Farming," Springer, 2026. <span class="tag">Scopus</span></span></div>
@@ -207,7 +225,7 @@
   </section>
 
   <!-- ========== CERTIFICATIONS & WORKSHOPS ========== -->
-  <section>
+  <section data-aos="fade-up">
     <h2>📌 Certifications & FDPs</h2>
     <div class="card">
       <ul class="cert-list">
@@ -239,7 +257,7 @@
   </section>
 
   <!-- ========== WORKSHOPS/CONFERENCES CONDUCTED ========== -->
-  <section>
+  <section data-aos="fade-up">
     <h2>🎤 Workshops / Hackathons / Conferences Conducted</h2>
     <div class="card">
       <ul>
@@ -259,7 +277,7 @@
   </section>
 
   <!-- ========== PERSONAL ATTRIBUTES ========== -->
-  <section>
+  <section data-aos="fade-up">
     <h2>🧑‍🏫 Personal Attributes</h2>
     <div class="card" style="display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center;">
       <div>
@@ -274,10 +292,16 @@
     </div>
   </section>
 
+  <!-- ========== BACK TO TOP BUTTON ========== -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
   <footer style="margin-top: 3rem; text-align: center; color: #94a3b8; font-size: 0.9rem; border-top: 1px solid #e2e8f0; padding-top: 1.5rem;">
     Dr. Vandana Kate · Portfolio · Built with ❤️ for GitHub Pages
+    <span id="year"></span>
   </footer>
 
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
