@@ -1,0 +1,256 @@
+/* ----- modern reset & base ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f6f9fc;
+  color: #1e293b;
+  line-height: 1.5;
+  padding: 1.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0 20px 40px -12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 2rem 2rem 3rem;
+}
+
+/* ----- typography & spacing ----- */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 4px solid #e2e8f0;
+  display: inline-block;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.5rem;
+  font-weight: 600;
+}
+
+.subhead {
+  color: #2563eb;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+ul, .list-inline {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.4rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+/* ----- header / profile ----- */
+.profile-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem 2rem;
+  background: #f8fafc;
+  padding: 1.8rem 2rem;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-avatar {
+  width: 110px;
+  height: 110px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(37,99,235,0.2);
+}
+
+.profile-details {
+  flex: 1;
+}
+.profile-details .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #2563eb;
+  margin-bottom: 0.25rem;
+}
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #334155;
+}
+.contact-grid span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.contact-grid i { font-style: normal; font-weight: 500; }
+
+/* summary box */
+.summary-box {
+  background: #f1f5f9;
+  padding: 1.5rem 2rem;
+  border-radius: 1.2rem;
+  margin-bottom: 2rem;
+  border-left: 5px solid #2563eb;
+}
+.summary-box p {
+  margin-bottom: 0.5rem;
+}
+.summary-box ul {
+  margin-top: 0.5rem;
+}
+
+/* cards & grid */
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
+}
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 1.2rem;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+  border: 1px solid #eef2f6;
+  transition: 0.2s ease;
+}
+.card:hover {
+  border-color: #bdd3ff;
+  box-shadow: 0 6px 16px rgba(37,99,235,0.06);
+}
+
+.tag {
+  display: inline-block;
+  background: #e6edfe;
+  color: #1e4f8a;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.8rem;
+  border-radius: 20px;
+  margin: 0.2rem 0.2rem 0.2rem 0;
+}
+
+.badge-outline {
+  border: 1px solid #d0d9e8;
+  background: transparent;
+  color: #1e293b;
+}
+
+/* table-like lists for patents etc */
+.patent-item, .book-item, .pub-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #ecf1f7;
+}
+.patent-item:last-child, .book-item:last-child, .pub-item:last-child {
+  border-bottom: none;
+}
+.patent-title {
+  font-weight: 500;
+  flex: 2 1 200px;
+}
+.patent-meta {
+  color: #475569;
+  font-size: 0.9rem;
+  flex: 1 1 auto;
+  text-align: right;
+}
+
+.experience-item {
+  margin-bottom: 1.5rem;
+}
+.exp-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.exp-org {
+  color: #2563eb;
+}
+.exp-date {
+  font-weight: 400;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.cert-list {
+  columns: 2 260px;
+  column-gap: 2rem;
+}
+.cert-list li {
+  break-inside: avoid;
+  padding-left: 1.2rem;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+  .container { padding: 1rem; }
+  .profile-header { flex-direction: column; align-items: flex-start; }
+  .grid-2col { grid-template-columns: 1fr; gap: 1rem; }
+  .patent-item { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
+  .patent-meta { text-align: left; }
+  h1 { font-size: 1.8rem; }
+}
+
+/* utility */
+.mt-1 { margin-top: 0.5rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.text-muted { color: #64748b; }
+.inline-icon { font-weight: 400; margin-right: 4px; }
